@@ -15,7 +15,7 @@
                     if (i < array.Length - 1)
                         Console.Write(", ");
                 }
-                Console.Write(")");
+                Console.WriteLine(") ");
             }
 
             int Quadrato(int numero)
@@ -44,6 +44,13 @@
                 }
                 return sum;
             }
+
+            int[] myArray = { 2, 6, 7, 5, 3, 9 };
+            StampaArray(myArray);
+            StampaArray(ElevaArrayAlQuadrato(myArray));
+            StampaArray(myArray);
+            Console.WriteLine($"La somma di tutti i numeri del primo array è: {sommaElementiArray(myArray)}");
+            Console.WriteLine($"La somma di tutti i numeri elevati al quadrato è: {sommaElementiArray(ElevaArrayAlQuadrato(myArray))}");
         }
     }
 }
